@@ -25,4 +25,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/register',[\App\Http\Controllers\RegisterController::class,'register']);
 
-
+Route::get('/activation/{token}',[\App\Http\Controllers\RegisterController::class,'signupActive']);
